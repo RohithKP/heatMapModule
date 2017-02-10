@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>heat-map module</title>
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		<div id="chartdiv"></div>
+		<table id="report-table" class="display" cellspacing="0" width="100%">
+			<thead>
+				<tr>
+					<th>Time</th>
+					<th>Spots</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>7:00:00 AM</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>7:15:00 AM</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>7:30:00 AM</td>
+					<td>15</td>
+				</tr>
+				<tr>
+					<td>7:45:00 AM</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>8:00:00 AM</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>8:15:00 AM</td>
+					<td>120</td>
+				</tr>
+				<tr>
+					<td>8:30:00 AM</td>
+					<td>180</td>
+				</tr>
+				<tr>
+					<td>8:45:00 AM</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<td>9:00:00 AM</td>
+					<td>220</td>
+				</tr>
+				<tr>
+					<td>9:15:00 AM</td>
+					<td>220</td>
+				</tr>
+				<tr>
+					<td>9:30:00 AM</td>
+					<td>250</td>
+				</tr>
+				<tr>
+					<td>9:45:00 AM</td>
+					<td>280</td>
+				</tr>
+				<tr>
+					<td>10:00:00 AM</td>
+					<td>280</td>
+				</tr>
+				<tr>
+					<td>10:15:00 AM</td>
+					<td>300</td>
+				</tr>
+				<tr>
+					<td>10:30:00 AM</td>
+					<td>310</td>
+				</tr>
+				<tr>
+					<td>10:45:00 AM</td>
+					<td>310</td>
+				</tr>
+				<tr>
+					<td>11:00:00 AM</td>
+					<td>310</td>
+				</tr>
+				<tr>
+					<td>11:15:00 AM</td>
+					<td>350</td>
+				</tr>
+				<tr>
+					<td>11:30:00 AM</td>
+					<td>380</td>
+				</tr>
+				<tr>
+					<td>11:45:00 AM</td>
+					<td>400</td>
+				</tr>
+				<tr>
+					<td>12:00:00 PM</td>
+					<td>400</td>
+				</tr>
+				<tr>
+					<td>12:15:00 PM</td>
+					<td>420</td>
+				</tr>
+				<tr>
+					<td>12:30:00 PM</td>
+					<td>450</td>
+				</tr>
+				<tr>
+					<td>12:45:00 PM</td>
+					<td>460</td>
+				</tr>
+				<tr>
+					<td>1:00:00 PM</td>
+					<td>460</td>
+				</tr>
+				<tr>
+					<td>1:15:00 PM</td>
+					<td>420</td>
+				</tr>
+				<tr>
+					<td>1:30:00 PM</td>
+					<td>420</td>
+				</tr>
+				<tr>
+					<td>1:45:00 PM</td>
+					<td>370</td>
+				</tr>
+				<tr>
+					<td>2:00:00 PM</td>
+					<td>345</td>
+				</tr>
+				<tr>
+					<td>2:15:00 PM</td>
+					<td>250</td>
+				</tr>
+				<tr>
+					<td>2:30:00 PM</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<td>2:45:00 PM</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>3:00:00 PM</td>
+					<td>110</td>
+				</tr>
+				<tr>
+					<td>3:15:00 PM</td>
+					<td>80</td>
+				</tr>
+				<tr>
+					<td>3:30:00 PM</td>
+					<td>65</td>
+				</tr>
+				<tr>
+					<td>3:45:00 PM</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>4:00:00 PM</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>4:15:00 PM</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>4:30:00 PM</td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td>4:45:00 PM</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>5:00:00 PM</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>5:15:00 PM</td>
+					<td>15</td>
+				</tr>
+				<tr>
+					<td>5:30:00 PM</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>5:45:00 PM</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6:00:00 PM</td>
+					<td>2</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/plugin/amcharts.js"></script>
+	<script src="js/plugin/light.js"></script>
+	<script src="js/plugin/serial.js"></script>
+	<script src="js/plugin/amstock.js"></script>
+	<script src="js/plugin/jquery.dataTables.min.js"></script>
+
+	<script src="js-dist/bundle.js"></script>
+</html>
