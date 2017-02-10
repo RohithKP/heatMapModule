@@ -1,45 +1,36 @@
 var chartsConfig = {
-    "type": "stock",
+    "type": "serial",
     "theme": "light",
-    "dataSets": [{
-        "title": "Time of day",
-        "id": "timeOfDay",
-        "fieldMappings": [{
-            "fromField": "spots",
-            "toField": "time"
-        }],
-        "dataProvider": "",
-        "categoryField": "date"
-    }, {
-        "title": "Day of week",
-        "id": "dayOfWeek",
-        "fieldMappings": [{
-            "fromField": "time",
-            "toField": "time"
-        }, {
-            "fromField": "spots",
-            "toField": "spots"
-        }],
-        "dataProvider": ""
+    "marginRight": 70,
+    "dataProvider": "",
+    "valueAxes": [{
+        "axisAlpha": 0,
+        "position": "left",
+        "title": "Visitors from country"
     }],
-
-    "panels": [{
-        "title": "Volume",
-        "percentHeight": 30,
-        "stockGraphs": [{
-            "valueField": "spots",
-            "type": "column",
-            "showBalloon": false,
-            "fillAlphas": 1
-        }]
+    "startDuration": 1,
+    "graphs": [{
+        "balloonText": "<b>[[category]]: [[value]]</b>",
+        "fillColorsField": "color",
+        "fillAlphas": 0.9,
+        "lineAlpha": 0.2,
+        "type": "column",
+        "valueField": "spots"
     }],
-    "dataSetSelector": {
-        "position": "left"
+    "chartCursor": {
+        "categoryBalloonEnabled": false,
+        "cursorAlpha": 0,
+        "zoomable": false
     },
-
+    "categoryField": "time",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "labelRotation": 45
+    },
     "export": {
         "enabled": true
     }
+
 }
 
 module.exports = chartsConfig;
